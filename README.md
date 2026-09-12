@@ -6,17 +6,20 @@ A free, local-first browser extension that puts deliberate friction between an i
 
 **1.1.0 Public Beta.** Designed for desktop Chromium browsers, including Chrome and Opera GX. This is an unpacked beta, not a browser-store listing or tamper-proof device manager.
 
-[Get started](docs/INSTALL.md) · [How it works](docs/ARCHITECTURE.md) · [Privacy](PRIVACY.md) · [Contribute](CONTRIBUTING.md)
+**[Download the extension ZIP](https://github.com/carbongotfound/MindMoth/releases/latest)** · [Install guide](docs/INSTALL.md) · [How it works](docs/ARCHITECTURE.md) · [Privacy](PRIVACY.md) · [Contribute](CONTRIBUTING.md)
 
 ![MindMoth dashboard](docs/screenshots/home-light.png)
 
 ## Install
 
-Download the extension ZIP and extract it to a permanent folder. In your browser's extensions page, enable **Developer mode**, choose **Load unpacked**, and select the folder containing `manifest.json`.
+**Download:** [MindMoth 1.1.0 on GitHub Releases](https://github.com/carbongotfound/MindMoth/releases/latest) (`MindMoth-extension-1.1.0.zip`). That asset is the extension only. It is not a full-repository source archive.
 
-From a source download, select the **`src`** directory instead. No npm install, desktop runtime, account or API key is needed to use the extension.
+1. Download the ZIP and extract it to a permanent folder.
+2. Open `chrome://extensions`, `opera://extensions`, or `edge://extensions`.
+3. Enable **Developer mode**.
+4. Choose **Load unpacked** and select the folder that contains `manifest.json`.
 
-Chrome: `chrome://extensions`. Opera GX: `opera://extensions`. Edge: `edge://extensions`.
+No npm install, desktop runtime, account or API key is needed. If you cloned this repository instead, load the **`src`** directory.
 
 **Updating an existing installation:** copy the new extension files into the same folder already loaded by the browser. Click **Reload** on that extension, then refresh the dashboard and protected website tabs. Do not remove/reinstall the extension to update it if you want to preserve its extension ID and data.
 

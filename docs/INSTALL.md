@@ -1,10 +1,12 @@
 # Install and update
 
+**Download the latest extension ZIP from [GitHub Releases](https://github.com/carbongotfound/MindMoth/releases/latest)** (`MindMoth-extension-1.1.0.zip`). That file is the unpacked extension only.
+
 ## First installation
 
-1. Download and extract the extension ZIP into a permanent folder such as `Documents/MindMoth/extension`. It must contain `manifest.json`, `background`, `content`, `dashboard`, `popup`, `lib`, and `assets`.
-2. Open `chrome://extensions` in Chrome or `opera://extensions` in Opera GX. Enable **Developer mode**.
-3. Select **Load unpacked** and choose that folder. For the full repository ZIP, choose its `src` folder.
+1. Download the release ZIP and extract it into a permanent folder such as `Documents/MindMoth/extension`. It must contain `manifest.json`, `background`, `content`, `dashboard`, `popup`, `lib`, and `assets`.
+2. Open `chrome://extensions` in Chrome, `opera://extensions` in Opera GX, or `edge://extensions` in Edge. Enable **Developer mode**.
+3. Select **Load unpacked** and choose the folder that contains `manifest.json`. For a full repository ZIP or git clone, choose its `src` folder.
 4. Pin MindMoth from the browser's extension menu. Open the toolbar popup, then **Open MindMoth dashboard**. Refresh existing supported-site tabs.
 
 Installation is manual during the public beta. MindMoth never silently modifies browser profiles or bypasses security warnings. There is no Windows executable.

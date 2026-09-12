@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible MindMoth problem
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options: [Chrome, Edge, Brave, Opera GX, Opera, Vivaldi, Other]
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+    validations: {required: true}
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?

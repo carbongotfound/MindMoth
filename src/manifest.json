@@ -1,0 +1,93 @@
+{
+  "manifest_version": 3,
+  "name": "MindMoth",
+  "version": "1.1.0",
+  "description": "A local-first doomscroll blocker that makes distracting websites genuinely annoying to open.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms"
+  ],
+  "host_permissions": [
+    "*://x.com/*",
+    "*://*.x.com/*",
+    "*://twitter.com/*",
+    "*://*.twitter.com/*",
+    "*://instagram.com/*",
+    "*://*.instagram.com/*",
+    "*://youtube.com/*",
+    "*://*.youtube.com/*",
+    "*://youtu.be/*",
+    "*://tiktok.com/*",
+    "*://*.tiktok.com/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "MindMoth",
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://x.com/*",
+        "*://*.x.com/*",
+        "*://twitter.com/*",
+        "*://*.twitter.com/*",
+        "*://instagram.com/*",
+        "*://*.instagram.com/*",
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtu.be/*",
+        "*://tiktok.com/*",
+        "*://*.tiktok.com/*"
+      ],
+      "js": [
+        "content/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/brands/*.png",
+        "assets/icons/*.png",
+        "assets/mascots/*.png",
+        "assets/poses/*.png",
+        "assets/scenes/*.webp"
+      ],
+      "matches": [
+        "*://x.com/*",
+        "*://*.x.com/*",
+        "*://twitter.com/*",
+        "*://*.twitter.com/*",
+        "*://instagram.com/*",
+        "*://*.instagram.com/*",
+        "*://youtube.com/*",
+        "*://*.youtube.com/*",
+        "*://youtu.be/*",
+        "*://tiktok.com/*",
+        "*://*.tiktok.com/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "version_name": "1.1.0 Public Beta",
+  "homepage_url": "https://github.com/carbongotfound/MindMoth",
+  "minimum_chrome_version": "114",
+  "options_page": "dashboard/index.html#settings"
+}

@@ -1,0 +1,22 @@
+{
+  "environment": "Chromium DOM tests with local HTML/data modules and extension-API adapter. Not native installed-extension or Opera GX tests.",
+  "passed": [
+    "Dashboard modules load and render without a syntax/runtime error",
+    "Theme and goal buttons work and persist in a newly opened dashboard",
+    "View all opens the dedicated Challenges page",
+    "Focus preset updates the displayed timer before starting",
+    "Whole-site inert lock; blocker choices, text fields, checkboxes and reading gate work",
+    "Worker rejects direct settings requests to turn off protection",
+    "Pause review enforces written answers, 60s reading, 5m wait and 8s hold",
+    "Active review reading stops when its tab loses focus",
+    "Held review completion pauses the service and restores website clicks without reload",
+    "Instant re-enable protects an already open website",
+    "Turning off uses a 10m review; cancellation retains protection",
+    "Focus locks existing site fixtures and direct early-stop requests are denied",
+    "YouTube, Instagram and TikTok direct-post URL fixtures receive full-site focus locks",
+    "Popup loads moth and supplied PNG logos; Manage opens protection settings",
+    "Dashboard fits a 390px viewport without horizontal overflow",
+    "Website GitHub CTAs, FAQ controls and mobile layout work"
+  ],
+  "pageErrors": []
+}
